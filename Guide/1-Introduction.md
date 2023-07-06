@@ -25,3 +25,43 @@
 - Even `html` and `md` in the `pages` directory are rendered as routes without any configuration
 - You can use `MDX` and `Markdoc` with plugins
 - You can even you `js` and `ts` file extensions in a markdown page (called an `endpoint`) which can be used for delivering JSON content and many other use cases.
+
+### Layouts
+
+- Layouts need to be defined with slots (which can be named if you want to pass multiple children) which can then be suplied with children components
+- In `.astro` components, you can import the layout and pass the content of the page as a child to the layout
+
+#### Layouts for Markdown
+
+- Page layouts are especially useful for Markdown and MDX pages which otherwise would not have any page formatting. For the same, Astro provides a special `layout` frontmatter property to specify which `.astro` component to use as the page layout.
+- A typical layout for Markdown or MDX pages includes:
+
+  - The frontmatter prop to access the Markdown or MDX page’s frontmatter and other data.
+  - A default <slot /> to indicate where the page’s Markdown/MDX content should be rendered.
+
+- Below is a sample `layout.astro` for markdown components.
+
+```astro
+---
+// The frontmatter prop gives access to frontmatter and other data
+const { frontmatter } = Astro.props;
+---
+
+<html>
+	<head>
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
+		<h1>{frontmatter.title} by {frontmatter.author}</h1>
+		<!-- Rendered HTML will be passed into the default slot. -->
+		<slot />
+		<p>Written on: {frontmatter.date}</p>
+	</body>
+</html>
+```
+
+### Styles
+
+- Follows the `SFC` approach where you can define the styles in the component itself
+- The styles are scoped to the component by default
+- Use the `is:global` attribute to overwrite this behaviour.
