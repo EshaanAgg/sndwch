@@ -25,11 +25,13 @@
 - Even `html` and `md` in the `pages` directory are rendered as routes without any configuration
 - You can use `MDX` and `Markdoc` with plugins
 - You can even you `js` and `ts` file extensions in a markdown page (called an `endpoint`) which can be used for delivering JSON content and many other use cases.
+- You can define your custom `404` page by naming it `404.astro` in the `pages` directory.
 
 ### Layouts
 
 - Layouts need to be defined with slots (which can be named if you want to pass multiple children) which can then be suplied with children components
 - In `.astro` components, you can import the layout and pass the content of the page as a child to the layout.
+- Layouts can import other layouts!
 
 #### Layouts for Markdown
 
