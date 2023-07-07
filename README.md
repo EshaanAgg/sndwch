@@ -30,4 +30,4 @@ This is a small business site that uses several of the common workflows that man
 
 ## Learning Experience
 
-All my learning experiences and the processes that I followed while building this project with be explained in the [Guide](./Guide/) directory. Feel free to check it out!
+All my learning experiences and the processes that I followed while building this project with be explained in the [guide](./guide/) directory. Feel free to check it out!

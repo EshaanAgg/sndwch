@@ -1,3 +1,11 @@
+---
+const navItems = [
+	{ path: "/shop", label: "Shop" },
+	{ path: "/blog", label: "Blog" },
+	{ path: "/about", label: "About" },
+];
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -20,7 +28,10 @@
 				sndwch
 			</a>
 
-			<!-- TODO: add nav -->
+			<!-- Navigation -->
+			<nav>
+				{navItems.map((item) => <a href={item.path}>{item.label}</a>)}
+			</nav>
 		</header>
 
 		<!-- The default slot where the content is injected -->

@@ -29,7 +29,7 @@
 ### Layouts
 
 - Layouts need to be defined with slots (which can be named if you want to pass multiple children) which can then be suplied with children components
-- In `.astro` components, you can import the layout and pass the content of the page as a child to the layout
+- In `.astro` components, you can import the layout and pass the content of the page as a child to the layout.
 
 #### Layouts for Markdown
 
