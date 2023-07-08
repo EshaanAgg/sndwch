@@ -11,3 +11,9 @@
 - Server-side rendering means using a server to generate HTML from JavaScript modules in response to a URL request.
 - This allows the user to disable javascript and yet enjoy an interactive experience.
 - If you want to use a server rendered component in another page, you don't need to make the whole page server-rendered! You can redirect to the relevant page/route. This can be seen from the newsletter on the home page.
+
+## Deployment
+
+- Static builds can be deployed anywhere from the `dist` folder
+- For server side rendering, you need to setup the adapter for the publisher, so that serverless functions can be set up for your server-rendered component.
+- You can checkout all the adapters on the official Astro docs.
