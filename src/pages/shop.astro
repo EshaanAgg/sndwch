@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/default.astro";
 import ShopItems from "../components/shopItems.astro";
+import { Cart } from "../components/cart";
 ---
 
 <Layout>
@@ -19,7 +20,7 @@ import ShopItems from "../components/shopItems.astro";
 
 		<div class="products">
 			<ShopItems />
-			<p>Todo: Cart</p>
+			<Cart client:only="solid-js" />
 		</div>
 	</div>
 </Layout>

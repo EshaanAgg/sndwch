@@ -1,7 +1,8 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  }
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		// The default flavour of jsx we are writing is React JSX, and thus we would need to overwrite it in the Solid component
+		"jsx": "react-jsx",
+		"jsxImportSource": "react"
+	}
 }
