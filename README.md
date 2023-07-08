@@ -2,31 +2,28 @@
 
 This is a small business site that uses several of the common workflows that many (maybe most) websites end up following. This is meant to get you acquainted with most workflows related to Astro.
 
-<details>
-<summary>Detailed Structure</summary>
+## Features
 
 - Marketing landing page
-  - Hero images
+  - Hero Images
     - Image handling
   - Cards
     - Featured Products
-  - Newsletter capture
+  - Newsletter Capture
 - Shop
-  - Advanced layout (nested)
-  - Shared state
-    - Solid cart
-    - React item buttons (add to cart)
-    - Nano stores to share state
+  - Advanced Nested Layouts
+  - Shared State between Frameworks
+    - Shopping Cart in Solid-JS
+    - Item's Add-to-Cart Buttons in React
+    - Nanostores to share state
 - Blog
   - Content Collections
     - Markdown
-  - Dynamic routes
+  - Dynamic Routes
   - RSS feed
 - About
   - Markdown page
-- 404 page
-
-</details>
+- Custom 404 Page
 
 ## Learning Experience
 
