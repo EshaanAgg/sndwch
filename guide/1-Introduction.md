@@ -61,9 +61,3 @@ const { frontmatter } = Astro.props;
 	</body>
 </html>
 ```
-
-### Styles
-
-- Follows the `SFC` approach where you can define the styles in the component itself
-- The styles are scoped to the component by default
-- Use the `is:global` attribute to overwrite this behaviour.

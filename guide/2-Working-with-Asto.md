@@ -2,6 +2,15 @@
 
 - You can use the familiar `JSX` syntax in `Astro` components to render content dynamically with JS.
 - But remember, Astro is not setting up a virtual DOM for us and we are just using the JSX. That means, no need to add a `key` attribute while `mapping` over elements and hooks like `useState` and `useEffect`.
+- Typescript works right out of the bat with `.astro` files if you had configured the same using the CLI.
+- You `CAN` use top-level `await` in Astro components, which is just such a neat convinience feature!
+- You can place your global types in `types.d.ts` in the `src` directory for them to be auto-imported everywhere in your project.
+
+### Styles
+
+- Follows the `SFC` approach where you can define the styles in the component itself
+- The styles are scoped to the component by default
+- Use the `is:global` attribute to overwrite this behaviour.
 
 ### Images and Assets
 
