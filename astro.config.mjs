@@ -6,8 +6,8 @@ import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "",
-  integrations: [react(), solidJs()],
-  output: "hybrid",
-  adapter: netlify()
+	site: "https://sndwch.netlify.app/",
+	integrations: [react(), solidJs()],
+	output: "hybrid",
+	adapter: netlify(),
 });
